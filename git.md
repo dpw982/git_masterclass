@@ -7,8 +7,14 @@ Before you can start using Git, you need to configure it. This command allows yo
 
 `git config --global user.email "email you created your github account with"`
 
-________
-git init
+___
+# git init
+Git init allows you to initialize a git repository on your local machine. If you want to store it on github you can upload the project you created locally, by following the instructions when creating a new repository on github. 
+
+`git config --global user.name "whatever user name you want"`
+
+___
+
 git clone
 git status
 git pull
