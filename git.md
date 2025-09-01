@@ -11,7 +11,7 @@ ___
 # git init
 Git init allows you to initialize a git repository on your local machine. If you want to store it on github you can upload the project you created locally, by following the instructions when creating a new repository on github. 
 
-`git config --global user.name "whatever user name you want"`
+`git init"`
 
 ___
 
