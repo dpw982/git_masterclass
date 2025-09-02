@@ -25,3 +25,9 @@ Then on github where you created the repository you need to do the 3 git command
 4. Once you have made the inital commit in step 3 you should clone the repository on github, so that you get a local copy on your computer.
    Move to a directory where you want to save the project locally, and use `git clone <git@github.com:"username on github"/"repo name on github".git>`
 5. Now you should have a remote repository stored on github and a clone of this repo locally on your machine. The repository on github can (and should) be shared with your collaborators, so that all of you can clone it and push and pull changes to the project.
+
+## Working on a project
+1. At this point you should have a working git repository stored on github, and cloned locally to your machine.
+2. Git will track your changes to the code made locally (You could be writing new files or changing existing code in the project).
+3. If you made any changes to the code that you want to be uploaded to your shared remote repository on github you should use `git add .` if you want to add all changes to every file you have made, or `git add filnavn.filtype` if you want to pick specific files.
+4. Once you've added the files to the staging index (git add), you use `git commit -m "I changed xyz in file xyz"` to store the commit locally. Then finally you can use `git push` this pushes the changes onto the github source code, making the version you commited the newest version. Collaborators in the group should then remember to fetch changes by using `git pull` so that everyone is up to date
