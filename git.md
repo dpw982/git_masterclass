@@ -1,7 +1,7 @@
-# Git introduction
+## Git introduction
 This document intends to show some of the commonly used git commands, as well as explain how it can help you when writing code.
 
-# Most common commands and what they do
+## Most common commands and what they do
 1. `git config` - Configures your git, so that you can specify username and email linked to your commits.
 2. `git init` - Allows you to initialize a git repository on your local machine.
 3. `git status` - Tells you what situation stage you're in within git. Really helpful when beginning to learn git.
@@ -14,4 +14,5 @@ This document intends to show some of the commonly used git commands, as well as
 10. `git merge <branch to merge with>`- Used to merge multiple branches. If you have a main branch and a local branch to work on changes, you can checkout to the main branch and merge the changes from the local branch into it.
 11. `git log` - Show all commits of a repository.
 
-
+## Common workflows
+# Starting a new project
