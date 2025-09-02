@@ -1,7 +1,7 @@
-## Git introduction
+# Git introduction
 This document intends to show some of the commonly used git commands, as well as explain how it can help you when writing code.
 
-## Most common commands and what they do
+# Most common commands and what they do
 1. `git config` - Configures your git, so that you can specify username and email linked to your commits.
 2. `git init` - Allows you to initialize a git repository on your local machine.
 3. `git status` - Tells you what situation stage you're in within git. Really helpful when beginning to learn git.
@@ -14,5 +14,11 @@ This document intends to show some of the commonly used git commands, as well as
 10. `git merge <branch to merge with>`- Used to merge multiple branches. If you have a main branch and a local branch to work on changes, you can checkout to the main branch and merge the changes from the local branch into it.
 11. `git log` - Show all commits of a repository.
 
-## Common workflows
-# Starting a new project
+# Common workflows
+## Starting a new project
+1. Go to github.com and log in to your account.
+2. Press create new repository, and name it.
+3. You can either manually upload the inital commit (a or some files) or you can initialize it in you command line.
+If you want to use the command line, create a directory and store the inital files for your new project.
+Move to the directory in the command line and run `git init`.
+Then on github where you created the repository it should state the last 3 git commands to push the inital commit.
