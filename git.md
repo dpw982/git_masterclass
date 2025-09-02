@@ -10,6 +10,7 @@ Before you can start using Git, you need to configure it. This command allows yo
 ___
 # git init
 Git init allows you to initialize a git repository on your local machine. If you want to store it on github you can upload the project you created locally, by following the instructions when creating a new repository on github. 
+(Generally I prefer just to create and upload the repo manually using githubs GUI, but thats personal preference)
 
 `git init"`
 
