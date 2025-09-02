@@ -21,4 +21,4 @@ This document intends to show some of the commonly used git commands, as well as
 3. You can either manually upload the inital commit (a or some files) or you can initialize it in you command line.
 If you want to use the command line, create a directory and store the inital files for your new project.
 Move to the directory in the command line and run `git init`.
-Then on github where you created the repository it should state the last 3 git commands to push the inital commit.
+Then on github where you created the repository you need to do the 3 git commands under "…or push an existing repository from the command line".
