@@ -16,21 +16,22 @@ This document intends to show some of the commonly used git commands, as well as
 
 # Common workflows
 ## Starting a new project
-1. Go to github.com and log in to your account.
-2. Press create new repository, and name it.
-3. You can either manually upload the inital commit (a or some files) or you can initialize it in you command line.
-If you want to use the command line, create a directory and store the inital files for your new project.
-Move to the directory in the command line and run `git init`.
-Then on github where you created the repository you need to do the 3 git commands under "…or push an existing repository from the command line".
-4. Once you have made the inital commit in step 3 you should clone the repository on github, so that you get a local copy on your computer.
-   Move to a directory where you want to save the project locally, and use `git clone <git@github.com:"username on github"/"repo name on github".git>`
-5. Now you should have a remote repository stored on github and a clone of this repo locally on your machine. The repository on github can (and should) be shared with your collaborators, so that all of you can clone it and push and pull changes to the project.
+1. Create a new repo on github.
+2. Either upload files manually or run git init locally and connect it with GitHub using the provided commands.
+3. Clone the repo with `git clone <url>` to work locally. Use the SSH url.
+4. Share the GitHub repo so collaborators can clone, push, and pull changes.
 
 ## Working on a project
-1. At this point you should have a working git repository stored on github, and cloned locally to your machine.
-2. Git will track your changes to the code made locally (You could be writing new files or changing existing code in the project).
-3. If you made any changes to the code that you want to be uploaded to your shared remote repository on github you should use `git add .` if you want to add all changes to every file you have made, or `git add filnavn.filtype` if you want to pick specific files.
-4. Once you've added the files to the staging index (git add), you use `git commit -m "I changed xyz in file xyz"` to store the commit locally. Then finally you can use `git push` this pushes the changes onto the github source code, making the version you commited the newest version. Collaborators in the group should then remember to fetch changes by using `git pull` so that everyone is up to date
+1. Make changes locally (new or modified files).
+2. Stage changes with `git add .` for all changes in the current directory or `git add <file>` for specific file(s).
+3. Commit with `git commit -m "message"`.
+4. Push changes to remote with `git push`.
+5. Others should run `git pull` to fetch the new changes from the remote branch.
 
-## Multiple branches
-1. It is a good idea to make an additional branch locally when working on a shared project. This allows you to keep a main branch (the one on github) with the projects current source code. In addition to the main branch you can create a new one locally, so that you can experiment
+
+## Using branches
+1. Keep the main branch stable
+2. Create a new branch with `git checkout -b <branch>` or switch to an existing one using `git checkout <branch>`.
+3. After finalizing new changes in your new branch, add the files `git add`, commit them `git commit -m "changes in xyz"`.
+4. Once the commit is done use `git checkout main` to go back to the main branch, then `git merge <branch>` to merge the changes from the other branch.
+5. Now you can push the changes to the remote main branch if you'd like with `git push`
