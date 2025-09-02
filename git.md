@@ -1,5 +1,14 @@
-# Common git commandos
+# Git introduction
 This document intends to show some of the commonly used git commands, as well as explain how it can help you when developing software.
+
+# Most common commands and what they do
+1. `git config` - Configures your git, so that you can specify username and email linked to your commits.
+2. `git init` -
+
+
+
+
+
 # git config
 Before you can start using Git, you need to configure it. This command allows you to specify the username and email address that will be used with your commits.
 
