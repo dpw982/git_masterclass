@@ -2,17 +2,17 @@
 This document intends to show some of the commonly used git commands, as well as explain how it can help you when writing code.
 
 # Most common commands and what they do
-1. `git config` - Configures your git, so that you can specify username and email linked to your commits.
-2. `git init` - Allows you to initialize a git repository on your local machine.
-3. `git status` - Tells you what situation stage you're in within git. Really helpful when beginning to learn git.
-4. `git clone <url to remote repository>` - Clones a remote repository's source code to a local working copy on your machine. I.e it downloads a copy of the source code files on the remote repository to your machine.
-5. `git pull` - Fetches and integrates new changes from the remote repository into your working copy locally. 
-6. `git add . || git add filnavn.filtype` - Add all or specific files that has been changed to the staging index.
-7. `git commit -m "description"` - Saves a commit of new changes (the ones you have added with git add) with a log message and commit id locally.
-8. `git push` - Pushes the local repository to the remote repository. The commit that's saved locally gets integrated in the remote repository.
-9. `git checkout <branch name>` - Create a new branch or switch to an existing branch.
-10. `git merge <branch to merge with>`- Used to merge multiple branches. If you have a main branch and a local branch to work on changes, you can checkout to the main branch and merge the changes from the local branch into it.
-11. `git log` - Show all commits of a repository.
+1. `git config` – Set username and email for commits.
+2. `git init` – Initialize a local repository.
+3. `git status` – Show current repository state.
+4. `git clone <url>` – Copy a remote repository locally.
+5. `git pull` – Update local copy with remote changes.
+6. `git add . / git add <file>` – Stage changes.
+7. `git commit -m "msg"` – Save staged changes with a message.
+8. `git push` – Upload local commits to remote.
+9. `git checkout <branch>` – Switch or create a branch.
+10. `git merge <branch>` – Merge a branch into the current one.
+11. `git log` – View commit history
 
 # Common workflows
 ## Starting a new project
@@ -31,3 +31,6 @@ Then on github where you created the repository you need to do the 3 git command
 2. Git will track your changes to the code made locally (You could be writing new files or changing existing code in the project).
 3. If you made any changes to the code that you want to be uploaded to your shared remote repository on github you should use `git add .` if you want to add all changes to every file you have made, or `git add filnavn.filtype` if you want to pick specific files.
 4. Once you've added the files to the staging index (git add), you use `git commit -m "I changed xyz in file xyz"` to store the commit locally. Then finally you can use `git push` this pushes the changes onto the github source code, making the version you commited the newest version. Collaborators in the group should then remember to fetch changes by using `git pull` so that everyone is up to date
+
+## Multiple branches
+1. It is a good idea to make an additional branch locally when working on a shared project. This allows you to keep a main branch (the one on github) with the projects current source code. In addition to the main branch you can create a new one locally, so that you can experiment
