@@ -22,3 +22,6 @@ This document intends to show some of the commonly used git commands, as well as
 If you want to use the command line, create a directory and store the inital files for your new project.
 Move to the directory in the command line and run `git init`.
 Then on github where you created the repository you need to do the 3 git commands under "…or push an existing repository from the command line".
+4. Once you have made the inital commit in step 3 you should clone the repository on github, so that you get a local copy on your computer.
+   Move to a directory where you want to save the project locally, and use `git clone <git@github.com:"username on github"/"repo name on github".git>`
+5. Now you should have a remote repository stored on github, which holds the source code of your project. You can add your group mates, so that all of you can push and pull changes from the project source code.
