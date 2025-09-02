@@ -10,13 +10,18 @@ Before you can start using Git, you need to configure it. This command allows yo
 ___
 # git init
 Git init allows you to initialize a git repository on your local machine. If you want to store it on github you can upload the project you created locally, by following the instructions when creating a new repository on github. 
-(Generally I prefer just to create and upload the repo manually using githubs GUI, but thats personal preference)
+Generally I prefer just to create and upload the repo manually using githubs GUI, but thats personal preference
 
-`git init"`
+`git init`
 
 ___
+# git clone
+Git clone is used to clone a git repository. It takes a URL as argument, and saves a local working copy of a remote repository's source code.
+When you have cloned a repository you can push and pull changes from the remote repository to your local working copy.
 
-git clone
+`git clone git@github.com:"user name on github"/"name of repo".git`
+
+
 git status
 git pull
 git push
