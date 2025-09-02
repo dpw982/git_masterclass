@@ -1,9 +1,18 @@
 # Git introduction
-This document intends to show some of the commonly used git commands, as well as explain how it can help you when developing software.
+This document intends to show some of the commonly used git commands, as well as explain how it can help you when writing code.
 
 # Most common commands and what they do
 1. `git config` - Configures your git, so that you can specify username and email linked to your commits.
-2. `git init` -
+2. `git init` - Allows you to initialize a git repository on your local machine.
+3. `git status` - Tells you what situation stage you're in within git. Really helpful when beginning to learn git.
+4. `git clone <url to remote repository>` - Clones a remote repository's source code to a local working copy on your machine. I.e it downloads a copy of the source code files on the remote repository to your machine.
+5. `git pull` - Fetches and integrates new changes from the remote repository into your working copy locally. 
+6. `git add` - Add all or specific files that has been changed to the staging index.
+7. `git commit -m "description"` - Saves a commit of new changes (the ones you have added with git add) with a log message and commit id locally.
+8. `git push` - Pushes the local repository to the remote repository. The commit that's saved locally gets integrated in the remote repository.
+9. `git checkout <branch name>` - Create a new branch or switch to an existing branch.
+10. `git merge`- Used to merge multiple branches. If you have a main branch and a local branch to work on changes, you can checkout to the main branch and merge the changes from the local branch into it.
+11. `git log` - Show all commits of a repository.
 
 
 
